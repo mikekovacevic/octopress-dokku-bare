@@ -1,3 +1,23 @@
+## What is different?
+
+I've configured this to work with Dokku. If you install my custom Dokku fork, you'll be able to push to a fresh VPS using the following:
+
+```bash
+git remote add NAME git@YOURSITE.COM:NAME
+git push NAME master
+```
+
+Your octopress blog will now be available at NAME.YOURSITE.COM
+
+If you want to push to the root domain, make sure you use the following
+
+```bash
+git remote add NAME git@YOURSITE.COM:YOURSITE.COM
+git push NAME master
+```
+
+Note that this has the default theme installed, you can easily install any others following the guide on [Octopress](http://octopress.org/docs/theme/)
+
 ## What is Octopress?
 
 Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
